@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "解除CORS限制",
+  "description": "解除Fetch的跨域请求限制。",
+  "author": "dev-coco",
+  "version": "1.1",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.googleusercontent.com/*",
+    "*://script.google.com/*",
+    "*://translate.google.com/*"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
